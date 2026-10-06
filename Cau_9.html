@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation Exercise</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Personal Information</h2>
+    <form id="regForm">
+        <div class="form-group">
+            <label>Enter name*:</label>
+            <input type="text" id="name">
+        </div>
+        <div class="form-group">
+            <label>Sex*:</label>
+            <div class="radio-group">
+                <input type="radio" name="sex" value="Male"> Male
+                <input type="radio" name="sex" value="Female"> Female
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Enter email address*:</label>
+            <input type="text" id="email">
+        </div>
+        <div class="form-group">
+            <label>Enter birthday (MM/DD/YYYY)*:</label>
+            <input type="text" id="birthday" placeholder="MM/DD/YYYY">
+        </div>
+        <div class="form-group">
+            <label>Enter street address (line 1)*:</label>
+            <input type="text" id="address">
+        </div>
+        <div class="form-group">
+            <label>Enter city*:</label>
+            <input type="text" id="city">
+        </div>
+        <div class="form-group">
+            <label>Select a region*:</label>
+            <select id="region">
+                <option value="">-- Select --</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+                <option value="East">East</option>
+                <option value="West">West</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Enter 5-digit ZIP code*:</label>
+            <input type="text" id="zip">
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="btnFinished">Finished</button>
+            <button type="button" id="btnClear">Clear</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
